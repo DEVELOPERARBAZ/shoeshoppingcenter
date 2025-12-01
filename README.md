@@ -1,10 +1,12 @@
 <<<<<<< HEAD
+
 # ShoesShoppingCenter
-Your task is to develop a React application for a shoe store. It allows customers to view available shoes and add them to their shopping cart using the useState hook provided by React. The application should consist of the following key components
-=======
+
+# Your task is to develop a React application for a shoe store. It allows customers to view available shoes and add them to their shopping cart using the useState hook provided by React. The application should consist of the following key components
+
 ## 🚀 Deploy Link
 
-# [Click here to view the deployed app](https://shoesshoppingcenter.netlify.app/)
+# [Click here to view the deployed app](https://shoeshoppingcenter.netlify.app/)
 
 # React + Vite
 
@@ -18,4 +20,5 @@ Currently, two official plugins are available:
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
->>>>>>> a5c1633 (Initial commit)
+
+> > > > > > > a5c1633 (Initial commit)
