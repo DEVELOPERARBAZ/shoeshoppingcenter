@@ -1,4 +1,4 @@
-function Navbar() {
+function NavBar() {
   return (
     <>
       <nav>
@@ -13,4 +13,4 @@ function Navbar() {
     </>
   );
 }
-export default Navbar;
+export default NavBar;
