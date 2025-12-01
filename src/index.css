@@ -1,0 +1,84 @@
+body {
+  background-color: black;
+  color: white;
+}
+nav {
+  display: flex;
+  gap: 5vw;
+}
+#brand {
+  /* background-color: cyan; */
+  color: yellow;
+  padding: 2vw;
+}
+.nav-items {
+  /* background-color: crimson; */
+  display: flex;
+  align-items: center;
+  gap: 10vw;
+  flex-wrap: wrap;
+  padding: 1vw;
+  font-weight: 600;
+}
+.nav-items li {
+  padding: 1vw;
+}
+
+h1 {
+  padding: 2vw;
+  color: white;
+}
+
+#inventory {
+  background-color: red;
+  width: 50vw;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2vw;
+}
+.card {
+  width: 20vw;
+  margin: 1vw;
+  text-align: center;
+  border: 2px solid black;
+}
+.card img {
+  height: 10vw;
+}
+.card h3 {
+  background-color: yellow;
+}
+
+.card h6 {
+  background-color: yellow;
+}
+.add-button {
+  background-color: green;
+  color: white;
+}
+#main {
+  display: flex;
+  gap: 5vw;
+  padding: 1vw;
+}
+.right {
+  width: 50%;
+  background-color: gray;
+}
+#cart {
+  background-color: rgba(128, 128, 128, 0.158);
+}
+.cart-elem {
+  /* background-color: yellow; */
+  display: flex;
+  gap: 1vw;
+  align-items: center;
+  color: white;
+  padding: 1vw;
+}
+.cart-elem img {
+  width: 10vw;
+}
+.cart-elem h6 {
+  color: yellow;
+}
