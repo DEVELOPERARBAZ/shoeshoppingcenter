@@ -1,4 +1,4 @@
-import NavBar from "./component/Navbar";
+import NavBar from "./component/NavBar";
 import Card from "./component/Card";
 import CartElem from "./component/CartElem";
 
