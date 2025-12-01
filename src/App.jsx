@@ -1,4 +1,4 @@
-import NavBar from "./component/NavBar";
+import Navbar from "./component/NavBar";
 import Card from "./component/Card";
 import CartElem from "./component/CartElem";
 
@@ -71,7 +71,7 @@ const App = () => {
   console.log(totalPrice);
   return (
     <>
-      <NavBar />
+      <Navbar />
       <SharedContext.Provider
         value={{
           cart,
