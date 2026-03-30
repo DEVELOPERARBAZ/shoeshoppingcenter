@@ -1,6 +1,7 @@
 import NavBar from "./component/NavBar";
 import Card from "./component/Card";
 import CartElem from "./component/CartElem";
+import PayNow from "./component/PayNow";
 
 import { SharedContext } from "./SharedContext";
 
@@ -85,7 +86,7 @@ const App = () => {
       >
         <div id="main">
           <div className="left">
-            <h1>Availabe Shoes</h1>
+            {/* <h1>Availabe Shoes</h1> */}
             <div id="inventory">
               {shoes.map((each, idx) => {
                 return (
@@ -119,6 +120,8 @@ const App = () => {
               )}
             </div>
             <h1>Total Price : {!cart.length ? 0 : totalPrice}$</h1>
+
+            <PayNow totalAmount={totalPrice} />
           </div>
         </div>
       </SharedContext.Provider>
