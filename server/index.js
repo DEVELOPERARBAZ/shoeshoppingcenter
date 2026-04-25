@@ -8,8 +8,13 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 app.use(express.json());
-app.use(cors());
-
+app.use(
+  cors({
+    origin: "https://shoeshoppingcenter.netlify.app",
+    methods: ["GET", "POST"],
+    credentials: true,
+  }),
+);
 const razorpay = new Razorpay({
   key_id: process.env.RAZORPAY_KEY_ID,
   key_secret: process.env.RAZORPAY_SECRET,

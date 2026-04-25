@@ -10,22 +10,25 @@ const PayNow = ({ totalAmounts }) => {
     }
 
     try {
-      const res = await fetch("http://localhost:5000/order", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
+      const res = await fetch(
+        "https://api-node-payment-ed14.onrender.com/order",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            amount: totalAmount * 100,
+            currency: "INR",
+            receipt: `receipt_${Date.now()}`,
+          }),
         },
-        body: JSON.stringify({
-          amount: totalAmount * 100,
-          currency: "INR",
-          receipt: `receipt_${Date.now()}`,
-        }),
-      });
+      );
 
       const order = await res.json();
 
       const options = {
-        key: "rzp_test_Shj9XZA0uLIKSv",
+        key: "rzp_live_ShiqOT6kI47tQl",
         amount: order.amount,
         currency: order.currency,
         name: "Shoe Store",
@@ -34,7 +37,7 @@ const PayNow = ({ totalAmounts }) => {
 
         handler: async function (response) {
           const validateRes = await fetch(
-            "http://localhost:5000/order/validate",
+            "https://api-node-payment-ed14.onrender.com/order/validate",
             {
               method: "POST",
               headers: {
