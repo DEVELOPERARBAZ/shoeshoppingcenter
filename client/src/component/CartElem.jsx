@@ -9,7 +9,7 @@ const CartElem = ({ imageUrl, name, price, id, calc }) => {
     <div className="cart-elem" id={id}>
       <img src={imageUrl} alt={imageUrl} />
       <h3>{name}</h3>
-      <h6>{p}$</h6>
+      <h6>{p}₹</h6>
       <Quantity id={id} setPrice={setPrice} price={price} />
     </div>
   );

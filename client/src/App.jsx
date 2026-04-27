@@ -119,7 +119,7 @@ const App = () => {
                 <h1>Cart is Empty</h1>
               )}
             </div>
-            <h1>Total Price : {!cart.length ? 0 : totalPrice}$</h1>
+            <h1>Total Price : {!cart.length ? 0 : totalPrice}₹</h1>
 
             <PayNow totalAmount={totalPrice} />
           </div>

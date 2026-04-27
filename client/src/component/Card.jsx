@@ -6,7 +6,7 @@ function Card(props) {
     <div className="card">
       <img src={imageUrl} alt={imageUrl} />
       <h3>{name}</h3>
-      <h6>{price}$</h6>
+      <h6>{price}₹</h6>
       <AddToCart id={id} />
     </div>
   );
